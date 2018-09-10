@@ -1,0 +1,298 @@
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+      integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<section class="container" id="TaggingOfAnImage">
+    <div class="row">
+        <div class="col-xs-12 col-md-12"><!-- Instructions -->
+            <div class="panel panel-primary">
+                <!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature -->
+                <a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>Image Tagging
+                    Instructions, please read! (click to collapse)</strong></a>
+                <div class="panel-body" id="instructionBody">
+                    <p>You must identify the digit shown in the following image</p>
+                    <ul>
+                        <li>Select the digit below each image
+                        </li>
+                        <li>If an image contains several digits, tag the digit closer to the <strong>middle</strong> of
+                            the image.
+                        </li>
+                        <li><mark>Select <span style="font-family:'Lucida Console', monospace">N/A</span> only when the image <b>doesn't look close to any digit</b>. It&#39;s <b>OK</b> if the
+                            digit is <b>blurry, noisy or looks artificial.</b></mark></li>
+                        <li>Irresponsible answers will be <strong>REJECTED</strong> and you <strong>WON&#39;T BE
+                            PAID</strong>.
+                        </li>
+                        <li>Examples: <br>
+                            <img src="https://sail.blob.core.windows.net/amt/example1.png" alt="example1"/>
+                            <img src="https://sail.blob.core.windows.net/amt/example2.png" alt="example2"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="workContent">
+        <div class="col-md-1"></div>
+        <div class="form-group col-md-10">
+            <table class="table table-striped table-responsive">
+                <tbody>
+                <tr>
+                    <td style="text-align: center;"> <h5>Image: </h5></td>
+                    <td><img alt="image_url_0" class="img-responsive center-block"
+                             src="https://sail.blob.core.windows.net/amt/${image_url_0}"/></td>
+                    <td><img alt="image_url_1" class="img-responsive center-block"
+                             src="https://sail.blob.core.windows.net/amt/${image_url_1}"/></td>
+                    <td><img alt="image_url_2" class="img-responsive center-block"
+                             src="https://sail.blob.core.windows.net/amt/${image_url_2}"/></td>
+                    <td><img alt="image_url_3" class="img-responsive center-block"
+                             src="https://sail.blob.core.windows.net/amt/${image_url_3}"/></td>
+                    <td><img alt="image_url_4" class="img-responsive center-block"
+                             src="https://sail.blob.core.windows.net/amt/${image_url_4}"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;"><h5>Digit:</h5></td>
+                    <td style="text-align: center">
+                        <div class="btn-group" data-toggle="buttons" id="tag_0">
+                            <label class="btn btn-default"><input name="tag_0" required="" type="radio" value="0"/>0 </label>
+                            <label class="btn btn-default"> <input name="tag_0" required="" type="radio" value="1"/>1</label>
+                            <label class="btn btn-default"> <input name="tag_0" required="" type="radio" value="2"/>2</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_0" required="" type="radio" value="3"/>3 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input  name="tag_0" required="" type="radio" value="4"/>4</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input  name="tag_0" required="" type="radio" value="5"/>5</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_0" required="" type="radio" value="6"/>6 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_0" required="" type="radio" value="7"/>7</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_0" required="" type="radio" value="8"/>8</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_0" required="" type="radio" value="9"/>9 </label>
+                            <label class="btn btn-default" style="margin-top:-2px; width:67px;"><input name="tag_0" required="" type="radio" value="x"/>N/A</label>
+                        </div>
+                    </td>
+                    <td style="text-align: center;">
+                        <div class="btn-group" data-toggle="buttons" id="tag_1">
+                            <label class="btn btn-default"><input name="tag_1" required="" type="radio" value="0"/>0 </label>
+                            <label class="btn btn-default"> <input name="tag_1" required="" type="radio" value="1"/>1</label>
+                            <label class="btn btn-default"> <input name="tag_1" required="" type="radio" value="2"/>2</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_1" required="" type="radio" value="3"/>3 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_1" required="" type="radio" value="4"/>4</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_1" required="" type="radio" value="5"/>5</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_1" required="" type="radio" value="6"/>6 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_1" required="" type="radio" value="7"/>7</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_1" required="" type="radio" value="8"/>8</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_1" required="" type="radio" value="9"/>9 </label>
+                            <label class="btn btn-default" style="margin-top:-2px; width:67px;"><input name="tag_1" required="" type="radio" value="x"/>N/A</label>
+                        </div>
+                    </td>
+                    <td style="text-align: center;">
+                        <div class="btn-group" data-toggle="buttons" id="tag_2">
+                            <label class="btn btn-default"><input name="tag_2" required="" type="radio" value="0"/>0 </label>
+                            <label class="btn btn-default"> <input name="tag_2" required="" type="radio" value="1"/>1</label>
+                            <label class="btn btn-default"> <input name="tag_2" required="" type="radio" value="2"/>2</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_2" required="" type="radio" value="3"/>3 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_2" required="" type="radio" value="4"/>4</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_2" required="" type="radio" value="5"/>5</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_2" required="" type="radio" value="6"/>6 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_2" required="" type="radio" value="7"/>7</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_2" required="" type="radio" value="8"/>8</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_2" required="" type="radio" value="9"/>9 </label>
+                            <label class="btn btn-default" style="margin-top:-2px; width:67px;"><input name="tag_2" required="" type="radio" value="x"/>N/A</label>
+                        </div>
+                    </td>
+                    <td style="text-align: center;">
+                        <div class="btn-group" data-toggle="buttons" id="tag_3">
+                            <label class="btn btn-default"><input name="tag_3" required="" type="radio" value="0"/>0 </label>
+                            <label class="btn btn-default"> <input name="tag_3" required="" type="radio" value="1"/>1</label>
+                            <label class="btn btn-default"> <input name="tag_3" required="" type="radio" value="2"/>2</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_3" required="" type="radio" value="3"/>3 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_3" required="" type="radio" value="4"/>4</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_3" required="" type="radio" value="5"/>5</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_3" required="" type="radio" value="6"/>6 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_3" required="" type="radio" value="7"/>7</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_3" required="" type="radio" value="8"/>8</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_3" required="" type="radio" value="9"/>9 </label>
+                            <label class="btn btn-default" style="margin-top:-2px; width:67px;"><input name="tag_3" required="" type="radio" value="x"/>N/A</label>
+                        </div>
+                    </td>
+                    <td style="text-align: center;">
+                        <div class="btn-group" data-toggle="buttons" id="tag_4">
+                            <label class="btn btn-default"><input name="tag_4" required="" type="radio" value="0"/>0 </label>
+                            <label class="btn btn-default"> <input name="tag_4" required="" type="radio" value="1"/>1</label>
+                            <label class="btn btn-default"> <input name="tag_4" required="" type="radio" value="2"/>2</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_4" required="" type="radio" value="3"/>3 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_4" required="" type="radio" value="4"/>4</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_4" required="" type="radio" value="5"/>5</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_4" required="" type="radio" value="6"/>6 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_4" required="" type="radio" value="7"/>7</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_4" required="" type="radio" value="8"/>8</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_4" required="" type="radio" value="9"/>9 </label>
+                            <label class="btn btn-default" style="margin-top:-2px; width:67px;"><input name="tag_4" required="" type="radio" value="x"/>N/A</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;"><h5>Image: </h5></td>
+                    <td><img alt="image_url_5" class="img-responsive center-block"
+                             src="https://sail.blob.core.windows.net/amt/${image_url_5}"/></td>
+                    <td><img alt="image_url_6" class="img-responsive center-block"
+                             src="https://sail.blob.core.windows.net/amt/${image_url_6}"/></td>
+                    <td><img alt="image_url_7" class="img-responsive center-block"
+                             src="https://sail.blob.core.windows.net/amt/${image_url_7}"/></td>
+                    <td><img alt="image_url_8" class="img-responsive center-block"
+                             src="https://sail.blob.core.windows.net/amt/${image_url_8}"/></td>
+                    <td><img alt="image_url_9" class="img-responsive center-block"
+                             src="https://sail.blob.core.windows.net/amt/${image_url_9}"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;"><h5>Digit:</h5></td>
+                    <td style="text-align: center;">
+                        <div class="btn-group" data-toggle="buttons" id="tag_5">
+                            <label class="btn btn-default"><input name="tag_5" required="" type="radio" value="0"/>0 </label>
+                            <label class="btn btn-default"> <input name="tag_5" required="" type="radio" value="1"/>1</label>
+                            <label class="btn btn-default"> <input name="tag_5" required="" type="radio" value="2"/>2</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_5" required="" type="radio" value="3"/>3 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input  name="tag_5" required="" type="radio" value="4"/>4</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input  name="tag_5" required="" type="radio" value="5"/>5</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_5" required="" type="radio" value="6"/>6 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_5" required="" type="radio" value="7"/>7</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_5" required="" type="radio" value="8"/>8</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_5" required="" type="radio" value="9"/>9 </label>
+                            <label class="btn btn-default" style="margin-top:-2px; width:67px;"><input name="tag_5" required="" type="radio" value="x"/>N/A</label>
+                        </div>
+                    </td>
+                    <td style="text-align: center;">
+                        <div class="btn-group" data-toggle="buttons" id="tag_6">
+                            <label class="btn btn-default"><input name="tag_6" required="" type="radio" value="0"/>0 </label>
+                            <label class="btn btn-default"> <input name="tag_6" required="" type="radio" value="1"/>1</label>
+                            <label class="btn btn-default"> <input name="tag_6" required="" type="radio" value="2"/>2</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_6" required="" type="radio" value="3"/>3 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_6" required="" type="radio" value="4"/>4</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_6" required="" type="radio" value="5"/>5</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_6" required="" type="radio" value="6"/>6 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_6" required="" type="radio" value="7"/>7</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_6" required="" type="radio" value="8"/>8</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_6" required="" type="radio" value="9"/>9 </label>
+                            <label class="btn btn-default" style="margin-top:-2px; width:67px;"><input name="tag_6" required="" type="radio" value="x"/>N/A</label>
+                        </div>
+                    </td>
+                    <td style="text-align: center;">
+                        <div class="btn-group" data-toggle="buttons" id="tag_7">
+                            <label class="btn btn-default"><input name="tag_7" required="" type="radio" value="0"/>0 </label>
+                            <label class="btn btn-default"> <input name="tag_7" required="" type="radio" value="1"/>1</label>
+                            <label class="btn btn-default"> <input name="tag_7" required="" type="radio" value="2"/>2</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_7" required="" type="radio" value="3"/>3 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_7" required="" type="radio" value="4"/>4</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_7" required="" type="radio" value="5"/>5</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_7" required="" type="radio" value="6"/>6 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_7" required="" type="radio" value="7"/>7</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_7" required="" type="radio" value="8"/>8</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_7" required="" type="radio" value="9"/>9 </label>
+                            <label class="btn btn-default" style="margin-top:-2px; width:67px;"><input name="tag_7" required="" type="radio" value="x"/>N/A</label>
+                        </div>
+                    </td>
+                    <td style="text-align: center;">
+                        <div class="btn-group" data-toggle="buttons" id="tag_8">
+                            <label class="btn btn-default"><input name="tag_8" required="" type="radio" value="0"/>0 </label>
+                            <label class="btn btn-default"> <input name="tag_8" required="" type="radio" value="1"/>1</label>
+                            <label class="btn btn-default"> <input name="tag_8" required="" type="radio" value="2"/>2</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_8" required="" type="radio" value="3"/>3 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_8" required="" type="radio" value="4"/>4</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_8" required="" type="radio" value="5"/>5</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_8" required="" type="radio" value="6"/>6 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_8" required="" type="radio" value="7"/>7</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_8" required="" type="radio" value="8"/>8</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_8" required="" type="radio" value="9"/>9 </label>
+                            <label class="btn btn-default" style="margin-top:-2px; width:67px;"><input name="tag_8" required="" type="radio" value="x"/>N/A</label>
+                        </div>
+                    </td>
+                    <td style="text-align: center">
+                        <div class="btn-group" data-toggle="buttons" id="tag_9">
+                            <label class="btn btn-default"><input name="tag_9" required="" type="radio" value="0"/>0 </label>
+                            <label class="btn btn-default"> <input name="tag_9" required="" type="radio" value="1"/>1</label>
+                            <label class="btn btn-default"> <input name="tag_9" required="" type="radio" value="2"/>2</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_9" required="" type="radio" value="3"/>3 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_9" required="" type="radio" value="4"/>4</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_9" required="" type="radio" value="5"/>5</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_9" required="" type="radio" value="6"/>6 </label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_9" required="" type="radio" value="7"/>7</label>
+                            <label class="btn btn-default" style="margin-top:-2px"> <input name="tag_9" required="" type="radio" value="8"/>8</label>
+                            <br>
+                            <label class="btn btn-default" style="margin-top:-2px"><input name="tag_9" required="" type="radio" value="9"/>9 </label>
+                            <label class="btn btn-default" style="margin-top:-2px; width:67px;"><input name="tag_9" required="" type="radio" value="x"/>N/A</label>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</section>
+<style type="text/css">#collapseTrigger {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+#submitButton {
+    white-space: normal;
+}
+
+.image {
+    margin-bottom: 15px;
+}
+
+.radio:first-of-type {
+    margin-top: -5px;
+}
+</style>
+
+<!-- Close internal style sheet --><!-- Please note that Bootstrap CSS/JS and JQuery are 3rd party libraries that may update their url/code at any time. Amazon Mechanical Turk (MTurk) is including these libraries as a default option for you, but is not responsible for any changes to the external libraries -->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"
+        integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4"
+        crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        // Instructions expand/collapse
+        var content = $('#instructionBody');
+        var trigger = $('#collapseTrigger');
+        $('.collapse-text').text('(Click to expand)');
+        trigger.click(function () {
+            content.toggle();
+            var isVisible = content.is(':visible');
+            if (isVisible) {
+                $('.collapse-text').text('(Click to collapse)');
+            } else {
+                $('.collapse-text').text('(Click to expand)');
+            }
+        });
+        // end expand/collapse
+    });
+</script>
