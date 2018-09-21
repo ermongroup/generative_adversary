@@ -1,12 +1,12 @@
 # Constructing Unrestricted Adversarial Examples with Generative Models
 
-This repo contains necessary code for reproducing main results in the paper [Generative Adversarial Examples](https://arxiv.org/abs/1805.07894), NIPS 2018, Montréal, Canada. 
+This repo contains necessary code for reproducing main results in the paper [Constructing Unrestricted Adversarial Examples with Generative Models](https://arxiv.org/abs/1805.07894), NIPS 2018, Montréal, Canada. 
 
 by [Yang Song](https://yang-song.github.io/), [Rui Shu](https://ruishu.io//), [Nate Kushman](http://www.kushman.org/) and [Stefano Ermon](https://cs.stanford.edu/~ermon/), Stanford AI Lab.
 
 ---
 
-**Generative Adversarial Examples** is a new kind of adversarial inputs to machine learning systems. Different from traditional adversarial examples that are crafted by adding perturbations to clean images, generative adversarial examples are _realistic images that are synthesized entirely from scratch_. This new attack  demonstrates the danger of a stronger **threat model**, where traditional defense methods for perturbation-based adversarial examples fail.
+We propose **Generative Adversarial Examples**, a new kind of adversarial examples to machine learning systems. Different from traditional adversarial examples that are crafted by adding norm-bounded perturbations to clean images, generative adversarial examples are _realistic images that are synthesized entirely from scratch_, and not restricted to small norm-balls. This new attack demonstrates the danger of a stronger **threat model**, where traditional defense methods for perturbation-based adversarial examples fail.
 
 ## Running Experiments
 
