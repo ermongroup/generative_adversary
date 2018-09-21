@@ -1,4 +1,4 @@
-# Generative Adversarial Examples
+# Constructing Unrestricted Adversarial Examples with Generative Models
 
 This repo contains necessary code for reproducing main results in the paper [Generative Adversarial Examples](https://arxiv.org/abs/1805.07894), NIPS 2018, Montréal, Canada. 
 
