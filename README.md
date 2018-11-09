@@ -8,6 +8,12 @@ by [Yang Song](https://yang-song.github.io/), [Rui Shu](https://ruishu.io//), [N
 
 We propose **Generative Adversarial Examples**, a new kind of adversarial examples to machine learning systems. Different from traditional adversarial examples that are crafted by adding norm-bounded perturbations to clean images, generative adversarial examples are _realistic images that are synthesized entirely from scratch_, and not restricted to small norm-balls. This new attack demonstrates the danger of a stronger **threat model**, where traditional defense methods for perturbation-based adversarial examples fail.
 
+## Datasets
+
+Here are links to the datasets used in our experiments:
+* [CelebA (gender)](https://drive.google.com/open?id=1coLQbEZW6zshHVYi00IYSRiexq4RkA2x)
+* [SVHN](https://drive.google.com/open?id=1uPxNdW4K-GLFhqhOgtfI1jFFNEqp2eZn)
+
 ## Running Experiments
 
 ### Training AC-GANs
@@ -37,6 +43,7 @@ Run `python main.py --help` to view more argument options. For hyperparameters s
 ### Evaluating Generative Adversarial Examples
 
 In the paper, we use [Amazon Mechanical Turk](https://www.mturk.com/) to evaluate whether our generative adversarial examples are legitimate or not. We have provided `html` files for the labelling interface in folder `amt_websites`.
+
 
 ## Samples
 
