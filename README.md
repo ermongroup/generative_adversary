@@ -6,7 +6,7 @@ by [Yang Song](https://yang-song.github.io/), [Rui Shu](https://ruishu.io//), [N
 
 ---
 
-We propose **Generative Adversarial Examples**, a new kind of adversarial examples to machine learning systems. Different from traditional adversarial examples that are crafted by adding norm-bounded perturbations to clean images, generative adversarial examples are _realistic images that are synthesized entirely from scratch_, and not restricted to small norm-balls. This new attack demonstrates the danger of a stronger **threat model**, where traditional defense methods for perturbation-based adversarial examples fail.
+We propose **Unrestricted Adversarial Examples**, a new kind of adversarial examples to machine learning systems. Different from traditional adversarial examples that are crafted by adding norm-bounded perturbations to clean images, unrestricted adversarial examples are _realistic images that are synthesized entirely from scratch_, and not restricted to small norm-balls. This new attack demonstrates the danger of a stronger **threat model**, where traditional defense methods for perturbation-based adversarial examples fail.
 
 ## Datasets
 
@@ -18,7 +18,7 @@ Here are links to the datasets used in our experiments:
 
 ### Training AC-GANs
 
-In order to do generative adversarial attack, we first need a good conditional generative model so that we can search on the manifold of realistic images to find the adversarial ones. You can use `train_acgan.py` to do this. For example, the following command
+In order to do unrestricted adversarial attack, we first need a good conditional generative model so that we can search on the manifold of realistic images to find the adversarial ones. You can use `train_acgan.py` to do this. For example, the following command
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python train_acgan.py --dataset mnist --checkpoint_dir checkpoints/
@@ -28,7 +28,7 @@ will train an AC-GAN on the `MNIST` dataset with GPU #0 and output the weight fi
 
 Run `python train_acgan.py --help` to see more available argument options.
 
-### Generative Adversarial Attack
+### Unrestricted Adversarial Attack
 
 After the AC-GAN is trained, you can use `main.py` to do targeted / untargeted attack. You can also use `main.py` to evaluate the accuracy and PGD-robustness of a trained neural network classifier. For example, the following command
 
@@ -40,18 +40,18 @@ attacks the provable defense method from [Kolter & Wong, 2018](https://arxiv.org
 
 Run `python main.py --help` to view more argument options. For hyperparameters such as `--noise`, `--lambda1`, `--lambda2`, `--eps`,  `--z_eps`, `--lr`, and `--n_iters` (in that order), please refer to **Table. 4** in the Appendix of our [paper](https://arxiv.org/pdf/1805.07894.pdf). 
 
-### Evaluating Generative Adversarial Examples
+### Evaluating Unrestricted Adversarial Examples
 
-In the paper, we use [Amazon Mechanical Turk](https://www.mturk.com/) to evaluate whether our generative adversarial examples are legitimate or not. We have provided `html` files for the labelling interface in folder `amt_websites`.
+In the paper, we use [Amazon Mechanical Turk](https://www.mturk.com/) to evaluate whether our unrestricted adversarial examples are legitimate or not. We have provided `html` files for the labelling interface in folder `amt_websites`.
 
 
 ## Samples
 
- Perturbation-based adversarial examples (top row) VS generative adversarial examples (bottom-row):
+ Perturbation-based adversarial examples (top row) VS unrestricted adversarial examples (bottom-row):
 
 ![compare](assets/imgs/compare_adv_imgs.png)
 
-Targeted generative adversarial examples against robust classifiers on `MNIST` (Green borders denote legitimate generative adversarial examples while red borders denote illegimate ones. The tiny white text at the top-left corder of a red image denotes the label given by the annotators. )
+Targeted unrestricted adversarial examples against robust classifiers on `MNIST` (Green borders denote legitimate unrestricted adversarial examples while red borders denote illegimate ones. The tiny white text at the top-left corder of a red image denotes the label given by the annotators. )
 
 ![mnist](assets/imgs/mnist_madry_adv_targeted_large_plot.jpg)
 
@@ -69,7 +69,6 @@ If you find the idea or code useful for your research, please consider citing ou
 
 ```bib
 @inproceedings{song2018generative,
-  title={Generative Adversarial Examples},
   author={Song, Yang and Shu, Rui and Kushman, Nate and Ermon, Stefano},
   booktitle = {Advances in Neural Information Processing Systems (NIPS)},
   title = {Constructing Unrestricted Adversarial Examples with Generative Models},
