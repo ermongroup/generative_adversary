@@ -68,7 +68,7 @@ Finally here are the results for `CelebA`
 If you find the idea or code useful for your research, please consider citing our [paper](https://arxiv.org/abs/1805.07894):
 
 ```bib
-@inproceedings{song2018generative,
+@inproceedings{song2018constructing,
   author={Song, Yang and Shu, Rui and Kushman, Nate and Ermon, Stefano},
   booktitle = {Advances in Neural Information Processing Systems (NIPS)},
   title = {Constructing Unrestricted Adversarial Examples with Generative Models},
